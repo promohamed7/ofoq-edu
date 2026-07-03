@@ -1,0 +1,9 @@
+{
+  "projectId": "b661de0d-ed73-4361-9f49-1ea48289c823",
+  "type": "frontend",
+  "name": "Accounts — Visitor can access login/register",
+  "planSteps": [
+    { "type": "action", "description": "Navigate to /ar/accounts/login/ or the relevant login page under /ar/accounts/" },
+    { "type": "assertion", "description": "A login form is visible with inputs for email/username and password" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "projectId": "b661de0d-ed73-4361-9f49-1ea48289c823",
+  "type": "frontend",
+  "name": "Navigation — Visitor can view homepage and navigate to About Us",
+  "planSteps": [
+    { "type": "action", "description": "Navigate to the homepage /" },
+    { "type": "assertion", "description": "The page title contains 'رؤية' or the main navigation menu is visible" },
+    { "type": "action", "description": "Navigate to /ar/about/" },
+    { "type": "assertion", "description": "The URL ends with /ar/about/ and the page shows information about the platform" }
+  ]
+}

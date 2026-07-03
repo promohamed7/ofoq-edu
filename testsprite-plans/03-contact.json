@@ -1,0 +1,9 @@
+{
+  "projectId": "b661de0d-ed73-4361-9f49-1ea48289c823",
+  "type": "frontend",
+  "name": "Registration — Visitor can view the registration form",
+  "planSteps": [
+    { "type": "action", "description": "Navigate to /ar/contact/" },
+    { "type": "assertion", "description": "A multi-step registration form is visible with inputs for Arabic Name, English Name, and Email on the first step." }
+  ]
+}

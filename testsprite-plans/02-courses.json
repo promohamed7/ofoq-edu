@@ -1,0 +1,9 @@
+{
+  "projectId": "b661de0d-ed73-4361-9f49-1ea48289c823",
+  "type": "frontend",
+  "name": "Courses — Visitor can view the courses listing",
+  "planSteps": [
+    { "type": "action", "description": "Navigate to /ar/courses/الماجستير-المهني-المعتمد/الماجستير-المهني-في-إدارة-الموارد-البشرية/index.html" },
+    { "type": "assertion", "description": "The page displays details for the HR Master program, showing its title and content" }
+  ]
+}

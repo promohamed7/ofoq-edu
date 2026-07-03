@@ -1,0 +1,9 @@
+{
+  "projectId": "b661de0d-ed73-4361-9f49-1ea48289c823",
+  "type": "frontend",
+  "name": "Blog — Visitor can browse articles",
+  "planSteps": [
+    { "type": "action", "description": "Navigate to /ar/blog/" },
+    { "type": "assertion", "description": "A list or grid of blog posts or articles is displayed on the page" }
+  ]
+}
