@@ -1,0 +1,12 @@
+{
+  "projectId": "b661de0d-ed73-4361-9f49-1ea48289c823",
+  "type": "frontend",
+  "name": "Contact Form Client-Side Validation",
+  "description": "Verifies that submitting the contact form without required fields triggers client-side validation errors.",
+  "planSteps": [
+    { "type": "action", "description": "Navigate to /ar/contact/index.html" },
+    { "type": "action", "description": "Click the 'Next' button without filling any fields" },
+    { "type": "assertion", "description": "Assert that the form does not proceed to the next step" },
+    { "type": "assertion", "description": "Assert that validation error messages ('هذا الحقل مطلوب') are displayed for required fields" }
+  ]
+}

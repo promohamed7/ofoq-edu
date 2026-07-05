@@ -1,0 +1,47 @@
+name: TestSprite Verification Loop
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  testsprite-verification:
+    name: Run TestSprite Suite
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Install TestSprite CLI
+        run: npm install -g @testsprite/cli
+        
+      - name: Execute Tests
+        env:
+          TESTSPRITE_API_KEY: ${{ secrets.TESTSPRITE_API_KEY }}
+        run: |
+          echo "Starting TestSprite Verification Loop..."
+          
+          # Navigation Test
+          testsprite test run 1fb5585a-3320-483d-8e6f-527a58664146 --wait || exit 1
+          
+          # Courses Test
+          testsprite test run f54f5588-4908-4305-90d4-00885f4e145c --wait || exit 1
+          
+          # Contact / Registration Test
+          testsprite test run be937efe-0f95-44df-a11c-1ba5ff1ea7fa --wait || exit 1
+          
+          # Blog Test
+          testsprite test run 6a65d851-f436-43ec-8a33-c36b5fc9016f --wait || exit 1
+          
+          # Accounts Test
+          testsprite test run af5e88b7-7149-4b3c-b212-f0d780b50cdc --wait || exit 1
+          
+          echo "All TestSprite loops passed successfully!"

@@ -3,7 +3,7 @@
   "type": "frontend",
   "name": "Accounts — Visitor can access login/register",
   "planSteps": [
-    { "type": "action", "description": "Navigate to /ar/accounts/login/ or the relevant login page under /ar/accounts/" },
+    { "type": "action", "description": "Navigate to /ar/accounts/signin/" },
     { "type": "assertion", "description": "A login form is visible with inputs for email/username and password" }
   ]
 }
