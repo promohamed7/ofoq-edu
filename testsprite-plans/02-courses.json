@@ -1,9 +1,12 @@
 {
   "projectId": "b661de0d-ed73-4361-9f49-1ea48289c823",
   "type": "frontend",
-  "name": "Courses — Visitor can view the courses listing",
+  "name": "Courses — Visitor can view course details and registration CTA",
+  "description": "Verifies that a visitor can navigate from the courses listing to a specific course page, view its details, and find the registration CTA.",
   "planSteps": [
-    { "type": "action", "description": "Navigate to /ar/courses/الماجستير-المهني-المعتمد/الماجستير-المهني-في-إدارة-الموارد-البشرية/index.html" },
-    { "type": "assertion", "description": "The page displays details for the HR Master program, showing its title and content" }
+    { "type": "action", "description": "Navigate to /ar/courses/index.html" },
+    { "type": "action", "description": "Click on the course titled 'الماجستير المهني في إدارة الموارد البشرية' to view its details" },
+    { "type": "assertion", "description": "Verify that the course detail page loads, displaying the title 'الماجستير المهني في إدارة الموارد البشرية' prominently in the hero section" },
+    { "type": "assertion", "description": "Verify that a registration or enrollment CTA button (e.g., 'نموذج التسجيل') is clearly visible on the page" }
   ]
 }
